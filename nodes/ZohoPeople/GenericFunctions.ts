@@ -61,8 +61,7 @@ export async function zohoApiRequest(
 		const responseData = await this.helpers.requestOAuth2.call(
 			this,
 			'zohoPeopleOAuth2Api',
-			options,
-			{ tokenType: 'Bearer' }
+			options
 		);
 
 		if (responseData === undefined) return [];
