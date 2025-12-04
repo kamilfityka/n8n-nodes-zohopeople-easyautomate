@@ -13,10 +13,28 @@ export const timerOperations: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Start Timer',
-				value: 'startTimer',
-				description: 'Start a new timer',
-				action: 'Start timer',
+				name: 'Add Comment',
+				value: 'addComment',
+				description: 'Add a comment to a timer',
+				action: 'Add comment to timer',
+			},
+			{
+				name: 'Delete Comment',
+				value: 'deleteComment',
+				description: 'Delete a comment from a timer',
+				action: 'Delete comment from timer',
+			},
+			{
+				name: 'Get Comments',
+				value: 'getComments',
+				description: 'Get comments for a timer',
+				action: 'Get comments for timer',
+			},
+			{
+				name: 'Get Currently Running Timer',
+				value: 'getCurrentlyRunningTimer',
+				description: 'Get the currently running timer details',
+				action: 'Get currently running timer',
 			},
 			{
 				name: 'Pause Timer',
@@ -31,28 +49,10 @@ export const timerOperations: INodeProperties[] = [
 				action: 'Resume timer',
 			},
 			{
-				name: 'Get Currently Running Timer',
-				value: 'getCurrentlyRunningTimer',
-				description: 'Get the currently running timer details',
-				action: 'Get currently running timer',
-			},
-			{
-				name: 'Add Comment',
-				value: 'addComment',
-				description: 'Add a comment to a timer',
-				action: 'Add comment to timer',
-			},
-			{
-				name: 'Get Comments',
-				value: 'getComments',
-				description: 'Get comments for a timer',
-				action: 'Get comments for timer',
-			},
-			{
-				name: 'Delete Comment',
-				value: 'deleteComment',
-				description: 'Delete a comment from a timer',
-				action: 'Delete comment from timer',
+				name: 'Start Timer',
+				value: 'startTimer',
+				description: 'Start a new timer',
+				action: 'Start timer',
 			},
 		],
 		default: 'startTimer',
@@ -113,32 +113,32 @@ export const timerFields: INodeProperties[] = [
 		required: true,
 		options: [
 			{
-				name: 'Billable',
-				value: 'billable',
-			},
-			{
-				name: 'Non-Billable',
-				value: 'non billable',
-			},
-			{
-				name: 'Non-Billable (Alt)',
-				value: 'nonbillable',
-			},
-			{
 				name: 'All',
 				value: 'all',
+			},
+			{
+				name: 'All (-1)',
+				value: '-1',
+			},
+			{
+				name: 'Billable',
+				value: 'billable',
 			},
 			{
 				name: 'Billable (1)',
 				value: '1',
 			},
 			{
+				name: 'Non-Billable',
+				value: 'non billable',
+			},
+			{
 				name: 'Non-Billable (0)',
 				value: '0',
 			},
 			{
-				name: 'All (-1)',
-				value: '-1',
+				name: 'Non-Billable (Alt)',
+				value: 'nonbillable',
 			},
 		],
 		default: 'billable',
