@@ -31,16 +31,16 @@ export const timesheetOperations: INodeProperties[] = [
 				action: 'Delete timesheets',
 			},
 			{
-				name: 'Get Timesheets',
-				value: 'getTimesheets',
-				description: 'Used to get the list of timesheets',
-				action: 'Get timesheets',
-			},
-			{
 				name: 'Get Timesheet Details',
 				value: 'getTimesheetDetails',
 				description: 'Used to get the details from a particular timesheet',
 				action: 'Get timesheet details',
+			},
+			{
+				name: 'Get Timesheets',
+				value: 'getTimesheets',
+				description: 'Used to get the list of timesheets',
+				action: 'Get timesheets',
 			},
 			{
 				name: 'Modify Timesheet',
