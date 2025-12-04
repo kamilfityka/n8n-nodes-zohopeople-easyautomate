@@ -1,9 +1,5 @@
 import { INodeProperties } from 'n8n-workflow';
 
-import {
-	makeGetAllFields,
-} from './SharedFields';
-
 export const attendanceOperations: INodeProperties[] = [
 	{
 		displayName: 'Operation',
@@ -235,7 +231,7 @@ export const attendanceFields: INodeProperties[] = [
 		type: 'json',
 		required: true,
 		default: '[{"empId":"1","checkIn":"2014-11-07 09:01:00","location":"Chennai","building":"Administration"},{"empId":"1","checkOut":"2014-11-07 18:02:00"}]',
-		description: 'JSON array with check-in and check-out details. Format: [{"empId":"1","checkIn":"2014-11-07 09:01:00","location":"Chennai","building":"Administration"},{"empId":"1","checkOut":"2014-11-07 18:02:00"}]',
+		description: 'JSON array with check-in and check-out details. Format: [{"empId":"1","checkIn":"2014-11-07 09:01:00","location":"Chennai","building":"Administration"},{"empId":"1","checkOut":"2014-11-07 18:02:00"}].',
 		displayOptions: {
 			show: {
 				resource: ['attendance'],
@@ -367,7 +363,6 @@ export const attendanceFields: INodeProperties[] = [
 				name: 'erecno',
 				type: 'string',
 				default: '',
-				description: 'Employee record number',
 			},
 			{
 				displayName: 'Map ID',
@@ -388,7 +383,6 @@ export const attendanceFields: INodeProperties[] = [
 				name: 'empId',
 				type: 'string',
 				default: '',
-				description: 'Employee ID',
 			},
 		],
 	},
@@ -458,7 +452,6 @@ export const attendanceFields: INodeProperties[] = [
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Employee ID',
 		displayOptions: {
 			show: {
 				resource: ['attendance'],

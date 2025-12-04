@@ -160,10 +160,9 @@ export const timesheetFields: INodeProperties[] = [
 				type: 'number',
 				typeOptions: {
 					minValue: 1,
-					maxValue: 200,
 				},
 				default: 200,
-				description: 'Max number of results to return (maximum: 200)',
+				description: 'Max number of results to return',
 			},
 			{
 				displayName: 'Start Index',

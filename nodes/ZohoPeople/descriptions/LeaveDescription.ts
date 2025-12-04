@@ -74,7 +74,7 @@ export const leaveOperations: INodeProperties[] = [
 				name: 'Get Bradford Report',
 				value: 'getBradfordReport',
 				description: 'Fetch Bradford report for rolling 12 months',
-				action: 'Get Bradford report',
+				action: 'Get bradford report',
 			},
 			{
 				name: 'Get Encashment Report',
@@ -155,7 +155,6 @@ export const leaveFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: '01-Jan-2024',
-				description: 'From date',
 			},
 			{
 				displayName: 'To Date',
@@ -163,7 +162,6 @@ export const leaveFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: '31-Dec-2024',
-				description: 'To date',
 			},
 			{
 				displayName: 'Date Format',
@@ -234,7 +232,7 @@ export const leaveFields: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: '["1234567890"]',
-				description: 'JSON Array of employee erecnos. Example: ["1234567890","0987654321"]',
+				description: 'JSON Array of employee erecnos. Example: ["1234567890","0987654321"].',
 			},
 			{
 				displayName: 'Leave Type (JSON Array)',
@@ -268,10 +266,9 @@ export const leaveFields: INodeProperties[] = [
 				type: 'number',
 				typeOptions: {
 					minValue: 1,
-					maxValue: 200,
 				},
 				default: 200,
-				description: 'Max number of results to return (maximum: 200)',
+				description: 'Max number of results to return',
 			},
 			{
 				displayName: 'Data Select',
@@ -348,7 +345,6 @@ export const leaveFields: INodeProperties[] = [
 				operation: ['addLeave'],
 			},
 		},
-		description: 'Leave type ID',
 	},
 	{
 		displayName: 'From Date',
@@ -627,10 +623,9 @@ export const leaveFields: INodeProperties[] = [
 				type: 'number',
 				typeOptions: {
 					minValue: 1,
-					maxValue: 30,
 				},
 				default: 30,
-				description: 'Number of employee reports to fetch (maximum: 30)',
+				description: 'Max number of results to return',
 			},
 		],
 	},
@@ -769,10 +764,9 @@ export const leaveFields: INodeProperties[] = [
 				type: 'number',
 				typeOptions: {
 					minValue: 1,
-					maxValue: 30,
 				},
 				default: 30,
-				description: 'Number of employee reports that have to be fetched (maximum: 30)',
+				description: 'Max number of results to return',
 			},
 		],
 	},
