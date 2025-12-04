@@ -986,27 +986,6 @@ If this project is helpful, please consider:
 - [n8n Community](https://community.n8n.io/)
 - [Zoho People](https://www.zoho.com/people/)
 
-## 📋 Changelog
-
-### v0.2.1
-- 🐛 Fixed ESLint alphabetization errors in node parameter options
-- 📝 Updated Timesheet documentation to include all 6 operations
-- ✨ Documented missing Timesheet operations: Approve, Create, Delete, and Modify
-
-### v0.2.0
-- ✨ Added comprehensive Timer API integration (7 operations)
-- ✨ Added advanced Leave API operations (11 operations)
-- ✨ Added Timesheet operations (6 operations)
-- 🔧 Refactoring: Split ZohoPeople.node.ts into separate operation files
-- 📝 Enhanced OAuth2 credentials documentation
-- 🎨 Added emoji to scopes for better readability
-
-### v0.1.0
-- 🎉 Initial release
-- ✨ Support for Forms, Attendance, Cases, Leave, View
-
----
-
 <p align="center">
     <b>Built with ❤️ for the n8n community</b>
     <br />
