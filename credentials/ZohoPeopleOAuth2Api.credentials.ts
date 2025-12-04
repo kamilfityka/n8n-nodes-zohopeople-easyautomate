@@ -113,11 +113,8 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 		{
 			displayName: 'Scopes',
 			name: 'scope',
-			type: 'string',
-			required: true,
-			default: 'ZOHOPEOPLE.forms.READ ZOHOPEOPLE.leave.READ',
-			placeholder: 'ZOHOPEOPLE.forms.ALL ZOHOPEOPLE.employee.ALL',
-			description: 'Space-separated list of OAuth scopes. Available scopes: employee.ALL, forms.ALL/READ/CREATE/UPDATE, dashboard.ALL, automation.ALL, timetracker.ALL, attendance.ALL, leave.ALL/READ/CREATE/UPDATE',
+			type: 'hidden',
+			default: 'ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.leave.ALL,ZOHOPEOPLE.timetracker.ALL,ZOHOPEOPLE.attendance.ALL,ZOHOPEOPLE.employee.ALL',
 		},
 		{
 			displayName: 'Auth URI Query Parameters',
