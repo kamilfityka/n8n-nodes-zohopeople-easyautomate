@@ -114,6 +114,7 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 			displayName: 'Scopes',
 			name: 'scope',
 			type: 'multiOptions',
+			required: true,
 			options: [
 				// ========================================
 				// EMPLOYEE
