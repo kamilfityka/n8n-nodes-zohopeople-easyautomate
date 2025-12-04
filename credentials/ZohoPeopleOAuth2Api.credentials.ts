@@ -210,7 +210,7 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 				},
 
 			],
-			default: [],
+			default: ['ZOHOPEOPLE.forms.READ', 'ZOHOPEOPLE.leave.READ'],
 			description: 'Select the permissions your application needs. Choose "All Operations" for full access or specific operations for limited access.',
 		},
 		{
