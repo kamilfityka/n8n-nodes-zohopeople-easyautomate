@@ -123,26 +123,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					value: 'ZOHOPEOPLE.employee.ALL',
 					description: 'CRUD: Create, Read, Update, Delete employee data',
 				},
-				{
-					name: '👤 Employee → Read',
-					value: 'ZOHOPEOPLE.employee.READ',
-					description: 'View employee data only',
-				},
-				{
-					name: '👤 Employee → Create',
-					value: 'ZOHOPEOPLE.employee.CREATE',
-					description: 'Create new employee records',
-				},
-				{
-					name: '👤 Employee → Update',
-					value: 'ZOHOPEOPLE.employee.UPDATE',
-					description: 'Modify existing employee records',
-				},
-				{
-					name: '👤 Employee → Delete',
-					value: 'ZOHOPEOPLE.employee.DELETE',
-					description: 'Remove employee records',
-				},
 
 				// ========================================
 				// FORMS
@@ -167,11 +147,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					value: 'ZOHOPEOPLE.forms.UPDATE',
 					description: 'Modify existing form records',
 				},
-				{
-					name: '📝 Forms → Delete',
-					value: 'ZOHOPEOPLE.forms.DELETE',
-					description: 'Remove form records',
-				},
 
 				// ========================================
 				// DASHBOARD
@@ -180,26 +155,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					name: '📊 Dashboard → All Operations',
 					value: 'ZOHOPEOPLE.dashboard.ALL',
 					description: 'CRUD: Create, Read, Update, Delete dashboard data',
-				},
-				{
-					name: '📊 Dashboard → Read',
-					value: 'ZOHOPEOPLE.dashboard.READ',
-					description: 'View dashboard data only',
-				},
-				{
-					name: '📊 Dashboard → Create',
-					value: 'ZOHOPEOPLE.dashboard.CREATE',
-					description: 'Create dashboard configurations',
-				},
-				{
-					name: '📊 Dashboard → Update',
-					value: 'ZOHOPEOPLE.dashboard.UPDATE',
-					description: 'Modify dashboard configurations',
-				},
-				{
-					name: '📊 Dashboard → Delete',
-					value: 'ZOHOPEOPLE.dashboard.DELETE',
-					description: 'Remove dashboard configurations',
 				},
 
 				// ========================================
@@ -210,26 +165,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					value: 'ZOHOPEOPLE.automation.ALL',
 					description: 'CRUD: Create, Read, Update, Delete automation rules',
 				},
-				{
-					name: '⚙️ Automation → Read',
-					value: 'ZOHOPEOPLE.automation.READ',
-					description: 'View automation configurations only',
-				},
-				{
-					name: '⚙️ Automation → Create',
-					value: 'ZOHOPEOPLE.automation.CREATE',
-					description: 'Create automation rules',
-				},
-				{
-					name: '⚙️ Automation → Update',
-					value: 'ZOHOPEOPLE.automation.UPDATE',
-					description: 'Modify automation rules',
-				},
-				{
-					name: '⚙️ Automation → Delete',
-					value: 'ZOHOPEOPLE.automation.DELETE',
-					description: 'Remove automation rules',
-				},
 
 				// ========================================
 				// TIME TRACKER
@@ -239,26 +174,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					value: 'ZOHOPEOPLE.timetracker.ALL',
 					description: 'CRUD: Create, Read, Update, Delete time tracking data',
 				},
-				{
-					name: '⏱️ Time Tracker → Read',
-					value: 'ZOHOPEOPLE.timetracker.READ',
-					description: 'View time tracking data only',
-				},
-				{
-					name: '⏱️ Time Tracker → Create',
-					value: 'ZOHOPEOPLE.timetracker.CREATE',
-					description: 'Create time entries',
-				},
-				{
-					name: '⏱️ Time Tracker → Update',
-					value: 'ZOHOPEOPLE.timetracker.UPDATE',
-					description: 'Modify time entries',
-				},
-				{
-					name: '⏱️ Time Tracker → Delete',
-					value: 'ZOHOPEOPLE.timetracker.DELETE',
-					description: 'Remove time entries',
-				},
 
 				// ========================================
 				// ATTENDANCE
@@ -267,26 +182,6 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					name: '📅 Attendance → All Operations',
 					value: 'ZOHOPEOPLE.attendance.ALL',
 					description: 'CRUD: Create, Read, Update, Delete attendance records',
-				},
-				{
-					name: '📅 Attendance → Read',
-					value: 'ZOHOPEOPLE.attendance.READ',
-					description: 'View attendance records only',
-				},
-				{
-					name: '📅 Attendance → Create',
-					value: 'ZOHOPEOPLE.attendance.CREATE',
-					description: 'Create attendance entries',
-				},
-				{
-					name: '📅 Attendance → Update',
-					value: 'ZOHOPEOPLE.attendance.UPDATE',
-					description: 'Modify attendance entries',
-				},
-				{
-					name: '📅 Attendance → Delete',
-					value: 'ZOHOPEOPLE.attendance.DELETE',
-					description: 'Remove attendance entries',
 				},
 
 				// ========================================
@@ -312,81 +207,9 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 					value: 'ZOHOPEOPLE.leave.UPDATE',
 					description: 'Modify leave requests',
 				},
-				{
-					name: '🏖️ Leave → Delete',
-					value: 'ZOHOPEOPLE.leave.DELETE',
-					description: 'Remove leave requests',
-				},
 
-				// ========================================
-				// HR CASES
-				// ========================================
-				{
-					name: '💼 HR Cases → All Operations',
-					value: 'ZOHOPEOPLE.hrcases.ALL',
-					description: 'CRUD: Create, Read, Update, Delete HR case records',
-				},
-				{
-					name: '💼 HR Cases → Read',
-					value: 'ZOHOPEOPLE.hrcases.READ',
-					description: 'View HR case records only',
-				},
-				{
-					name: '💼 HR Cases → Create',
-					value: 'ZOHOPEOPLE.hrcases.CREATE',
-					description: 'Create HR cases',
-				},
-				{
-					name: '💼 HR Cases → Update',
-					value: 'ZOHOPEOPLE.hrcases.UPDATE',
-					description: 'Modify HR cases',
-				},
-				{
-					name: '💼 HR Cases → Delete',
-					value: 'ZOHOPEOPLE.hrcases.DELETE',
-					description: 'Remove HR cases',
-				},
-
-				// ========================================
-				// VIEW
-				// ========================================
-				{
-					name: '👁️ View → All Operations',
-					value: 'ZOHOPEOPLE.view.ALL',
-					description: 'CRUD: Create, Read, Update, Delete view configurations',
-				},
-				{
-					name: '👁️ View → Read',
-					value: 'ZOHOPEOPLE.view.READ',
-					description: 'Access custom and default views',
-				},
-				{
-					name: '👁️ View → Create',
-					value: 'ZOHOPEOPLE.view.CREATE',
-					description: 'Create custom views',
-				},
-				{
-					name: '👁️ View → Update',
-					value: 'ZOHOPEOPLE.view.UPDATE',
-					description: 'Modify view configurations',
-				},
-				{
-					name: '👁️ View → Delete',
-					value: 'ZOHOPEOPLE.view.DELETE',
-					description: 'Remove custom views',
-				},
 			],
-			default: [
-				'ZOHOPEOPLE.employee.ALL',
-				'ZOHOPEOPLE.forms.ALL',
-				'ZOHOPEOPLE.dashboard.ALL',
-				'ZOHOPEOPLE.automation.ALL',
-				'ZOHOPEOPLE.timetracker.ALL',
-				'ZOHOPEOPLE.attendance.ALL',
-				'ZOHOPEOPLE.leave.ALL',
-				'ZOHOPEOPLE.hrcases.ALL',
-				'ZOHOPEOPLE.view.ALL',
-			],
+			default: [],
 			description: 'Select the permissions your application needs. Choose "All Operations" for full access or specific operations for limited access.',
 		},
 		{
