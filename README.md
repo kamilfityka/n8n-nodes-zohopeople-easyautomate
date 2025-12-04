@@ -93,8 +93,12 @@ This node provides support for 7 main Zoho People resources:
 - Delete comments
 
 ### 📊 Timesheet
-- Get timesheets list
+- Approve or reject timesheets
+- Create timesheets
+- Delete timesheets
 - Get specific timesheet details
+- Get timesheets list
+- Modify timesheets
 
 ### 👁️ View
 - Default and custom views
@@ -679,6 +683,72 @@ Delete a comment from a timer.
 
 ### 📊 Timesheet
 
+#### Approve Timesheet
+Approve or reject a timesheet.
+
+**Parameters:**
+- `timesheetId` (required) - Timesheet ID
+- `approvalStatus` (required) - Approval status: "approved" or "rejected"
+
+**Optional parameters:**
+- `comments` - Approval comments
+- `isAllLevelApprove` - Whether to approve on behalf of all approvers
+- `timeLogs` - JSON object with time log IDs and their approval status
+
+**Example timeLogs format:**
+```json
+{
+  "123": "approved",
+  "124": "rejected"
+}
+```
+
+---
+
+#### Create Timesheet
+Create a new timesheet.
+
+**Parameters:**
+- `user` (required) - Email ID, Employee ID, or Erec No.
+- `timesheetName` (required) - Timesheet name
+- `fromDate` (required) - From date
+- `toDate` (required) - To date
+
+**Optional parameters:**
+- `billableStatus` - "all", "Billable", or "Non-Billable"
+- `clientId` - Client ID (default: "all")
+- `dateFormat` - Date format (default: "yyyy-MM-dd")
+- `description` - Description
+- `jobId` - Job ID (default: "all")
+- `projectId` - Project ID (default: "all")
+- `sendforApproval` - Whether to submit for approval
+
+---
+
+#### Delete Timesheets
+Delete one or more timesheets.
+
+**Parameters:**
+- `timesheetIds` (required) - Comma-separated timesheet IDs (max 1000)
+
+**Example:**
+```
+123456,789012,345678
+```
+
+---
+
+#### Get Timesheet Details
+Get details of a specific timesheet.
+
+**Parameters:**
+- `timesheetId` (required) - Timesheet ID
+
+**Optional parameters:**
+- `dateFormat` - Date format
+
+---
+
 #### Get Timesheets
 Get list of timesheets.
 
@@ -696,14 +766,17 @@ Get list of timesheets.
 
 ---
 
-#### Get Timesheet Details
-Get details of a specific timesheet.
+#### Modify Timesheet
+Modify an existing timesheet.
 
 **Parameters:**
 - `timesheetId` (required) - Timesheet ID
 
 **Optional parameters:**
-- `dateFormat` - Date format
+- `timesheetName` - Updated timesheet name
+- `description` - Updated description
+- `sendforApproval` - Whether to submit for approval
+- `removeAttachment` - Whether to remove attached file
 
 ---
 
@@ -915,10 +988,15 @@ If this project is helpful, please consider:
 
 ## 📋 Changelog
 
+### v0.2.1
+- 🐛 Fixed ESLint alphabetization errors in node parameter options
+- 📝 Updated Timesheet documentation to include all 6 operations
+- ✨ Documented missing Timesheet operations: Approve, Create, Delete, and Modify
+
 ### v0.2.0
 - ✨ Added comprehensive Timer API integration (7 operations)
 - ✨ Added advanced Leave API operations (11 operations)
-- ✨ Added Timesheet operations (2 operations)
+- ✨ Added Timesheet operations (6 operations)
 - 🔧 Refactoring: Split ZohoPeople.node.ts into separate operation files
 - 📝 Enhanced OAuth2 credentials documentation
 - 🎨 Added emoji to scopes for better readability
