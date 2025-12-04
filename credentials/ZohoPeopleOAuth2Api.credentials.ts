@@ -113,105 +113,11 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 		{
 			displayName: 'Scopes',
 			name: 'scope',
-			type: 'multiOptions',
+			type: 'string',
 			required: true,
-			options: [
-				// ========================================
-				// EMPLOYEE
-				// ========================================
-				{
-					name: '👤 Employee → All Operations',
-					value: 'ZOHOPEOPLE.employee.ALL',
-					description: 'CRUD: Create, Read, Update, Delete employee data',
-				},
-
-				// ========================================
-				// FORMS
-				// ========================================
-				{
-					name: '📝 Forms → All Operations',
-					value: 'ZOHOPEOPLE.forms.ALL',
-					description: 'CRUD: Create, Read, Update, Delete form data',
-				},
-				{
-					name: '📝 Forms → Read',
-					value: 'ZOHOPEOPLE.forms.READ',
-					description: 'View form data only',
-				},
-				{
-					name: '📝 Forms → Create',
-					value: 'ZOHOPEOPLE.forms.CREATE',
-					description: 'Create new form records',
-				},
-				{
-					name: '📝 Forms → Update',
-					value: 'ZOHOPEOPLE.forms.UPDATE',
-					description: 'Modify existing form records',
-				},
-
-				// ========================================
-				// DASHBOARD
-				// ========================================
-				{
-					name: '📊 Dashboard → All Operations',
-					value: 'ZOHOPEOPLE.dashboard.ALL',
-					description: 'CRUD: Create, Read, Update, Delete dashboard data',
-				},
-
-				// ========================================
-				// AUTOMATION
-				// ========================================
-				{
-					name: '⚙️ Automation → All Operations',
-					value: 'ZOHOPEOPLE.automation.ALL',
-					description: 'CRUD: Create, Read, Update, Delete automation rules',
-				},
-
-				// ========================================
-				// TIME TRACKER
-				// ========================================
-				{
-					name: '⏱️ Time Tracker → All Operations',
-					value: 'ZOHOPEOPLE.timetracker.ALL',
-					description: 'CRUD: Create, Read, Update, Delete time tracking data',
-				},
-
-				// ========================================
-				// ATTENDANCE
-				// ========================================
-				{
-					name: '📅 Attendance → All Operations',
-					value: 'ZOHOPEOPLE.attendance.ALL',
-					description: 'CRUD: Create, Read, Update, Delete attendance records',
-				},
-
-				// ========================================
-				// LEAVE
-				// ========================================
-				{
-					name: '🏖️ Leave → All Operations',
-					value: 'ZOHOPEOPLE.leave.ALL',
-					description: 'CRUD: Create, Read, Update, Delete leave records',
-				},
-				{
-					name: '🏖️ Leave → Read',
-					value: 'ZOHOPEOPLE.leave.READ',
-					description: 'View leave records only',
-				},
-				{
-					name: '🏖️ Leave → Create',
-					value: 'ZOHOPEOPLE.leave.CREATE',
-					description: 'Create leave requests',
-				},
-				{
-					name: '🏖️ Leave → Update',
-					value: 'ZOHOPEOPLE.leave.UPDATE',
-					description: 'Modify leave requests',
-				},
-
-			],
-			default: ['ZOHOPEOPLE.forms.READ', 'ZOHOPEOPLE.leave.READ'],
-			description: 'Select the permissions your application needs. Choose "All Operations" for full access or specific operations for limited access.',
+			default: 'ZOHOPEOPLE.forms.READ ZOHOPEOPLE.leave.READ',
+			placeholder: 'ZOHOPEOPLE.forms.ALL ZOHOPEOPLE.employee.ALL',
+			description: 'Space-separated list of OAuth scopes. Available scopes: employee.ALL, forms.ALL/READ/CREATE/UPDATE, dashboard.ALL, automation.ALL, timetracker.ALL, attendance.ALL, leave.ALL/READ/CREATE/UPDATE',
 		},
 		{
 			displayName: 'Auth URI Query Parameters',
