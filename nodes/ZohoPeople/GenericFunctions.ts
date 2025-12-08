@@ -58,7 +58,7 @@ export async function zohoApiRequest(
 	console.log(options);
 
 	try {
-		const responseData = await this.helpers.requestOAuth2.call(
+		const responseData = await this.helpers.httpRequestWithAuthentication.call(
 			this,
 			'zohoPeopleOAuth2Api',
 			options
