@@ -1,4 +1,9 @@
-import { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type {
+	IAuthenticateGeneric,
+	ICredentialTestRequest,
+	ICredentialType,
+	INodeProperties,
+} from 'n8n-workflow';
 
 export class ZohoPeopleOAuth2Api implements ICredentialType {
 	name = 'zohoPeopleOAuth2Api';
@@ -129,4 +134,13 @@ export class ZohoPeopleOAuth2Api implements ICredentialType {
 			default: 'body',
 		},
 	];
+
+	authenticate: IAuthenticateGeneric = {
+		type: 'generic',
+		properties: {
+			headers: {
+				Authorization: '=Bearer {{$credentials.oauthTokenData.access_token}}',
+			},
+		},
+	};
 }
