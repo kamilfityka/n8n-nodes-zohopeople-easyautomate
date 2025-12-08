@@ -3,7 +3,7 @@ import type {
 	IHookFunctions,
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
-	IRequestOptions,
+	IHttpRequestOptions,
 	IDataObject,
 } from 'n8n-workflow';
 
@@ -47,11 +47,13 @@ export async function zohoApiRequest(
 		? `${baseUrl}/api${endpoint}`
 		: `${baseUrl}/people/api${endpoint}`;
 
-	const options: IRequestOptions = {
+	const requestUrl: string = uri || defaultUri;
+
+	const options: IHttpRequestOptions = {
 		method,
 		body: Object.keys(body).length ? { data: [body] } : undefined,
 		qs: Object.keys(qs).length ? qs : undefined,
-		uri: uri ?? defaultUri,
+		url: requestUrl,
 		json: true,
 	};
 
