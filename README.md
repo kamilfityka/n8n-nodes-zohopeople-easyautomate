@@ -223,19 +223,6 @@ Before using the node, you need to configure OAuth2 in Zoho Developer Console:
      - **Client Secret**
    - You'll need these in the next step
 
-5. **Configure scopes:**
-   - In the application details, go to the **Scope** tab
-   - Add the required scopes, e.g.:
-     ```
-     ZOHOPEOPLE.forms.ALL
-     ZOHOPEOPLE.attendance.ALL
-     ZOHOPEOPLE.leave.ALL
-     ZOHOPEOPLE.timetracker.ALL
-     ZOHOPEOPLE.employee.READ
-     ZOHOPEOPLE.hrcases.ALL
-     ZOHOPEOPLE.view.READ
-     ```
-
 ### Step 2: Configure Credentials in n8n
 
 1. **Open n8n:**
@@ -251,25 +238,6 @@ Before using the node, you need to configure OAuth2 in Zoho Developer Console:
    | **Client Secret** | Your Client Secret | From Zoho API Console                                                                                                                                                |
    | **Authorization URL** | Automatic | Depends on region                                                                                                                                                    |
    | **Access Token URL** | Select region | US/EU/AU/IN/CN                                                                                                                                                       |
-   | **Scopes** | Select required | Choose operations for each resource                                                                                                                                  |
-
-3. **Select scopes:**
-
-   Scopes control API access. Format: `ZOHOPEOPLE.scopename.operation`
-
-   **Operation types:**
-   - `ALL` - Full CRUD access (Create, Read, Update, Delete)
-   - `CREATE` - Create only
-   - `READ` - Read only
-   - `UPDATE` - Update only
-   - `DELETE` - Delete only
-
-   **Examples:**
-   - ✅ `ZOHOPEOPLE.forms.ALL` - Full access to forms
-   - ✅ `ZOHOPEOPLE.timetracker.READ` - Read-only time tracking
-   - ✅ `ZOHOPEOPLE.leave.CREATE` - Create leaves only
-
-   💡 **Tip**: Select only the permissions your application needs for better security.
 
 4. **Authorize:**
    - Click **Connect my account**
