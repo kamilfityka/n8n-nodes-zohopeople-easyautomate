@@ -133,7 +133,7 @@ export const leaveFields: INodeProperties[] = [
 				name: 'employee',
 				type: 'string',
 				default: '',
-				description: 'Emp ID or Email ID or Erecno of the employee',
+				description: 'Emp ID or Email ID or Erecno of the employee, or "all" for all employees',
 			},
 			{
 				displayName: 'From Date',
