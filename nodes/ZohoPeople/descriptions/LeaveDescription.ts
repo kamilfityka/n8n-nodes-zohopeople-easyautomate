@@ -133,7 +133,7 @@ export const leaveFields: INodeProperties[] = [
 				name: 'employee',
 				type: 'string',
 				default: '',
-				description: 'Emp ID or Email ID or Erecno of the employee, or "all" for all employees',
+				description: 'Employee identifier: "all", Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 			},
 			{
 				displayName: 'From Date',
@@ -268,8 +268,8 @@ export const leaveFields: INodeProperties[] = [
 				name: 'employee',
 				type: 'string',
 				default: '',
-				placeholder: '["1234567890"]',
-				description: 'JSON Array of employee erecnos. Example: ["1234567890","0987654321"].',
+				placeholder: '["XYZ000","000000"]',
+				description: 'JSON Array of employee identifiers (Email ID, Employee ID, or Erec No). Example: ["XYZ000","000000"].',
 			},
 			{
 				displayName: 'Leave Type (JSON Array)',
@@ -495,7 +495,7 @@ export const leaveFields: INodeProperties[] = [
 				operation: ['getUserReport'],
 			},
 		},
-		description: 'Employee erecno',
+		description: 'Employee Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 	},
 	{
 		displayName: 'To Date',
@@ -571,8 +571,8 @@ export const leaveFields: INodeProperties[] = [
 				name: 'employee',
 				type: 'string',
 				default: '',
-				placeholder: '["1234567890"]',
-				description: 'JSON Array of employee erecnos (maximum 30)',
+				placeholder: '["XYZ000","000000"]',
+				description: 'JSON Array of employee identifiers (Email ID, Employee ID, or Erec No). Maximum 30 employees.',
 			},
 			{
 				displayName: 'Employee Status (JSON Array)',
@@ -639,14 +639,14 @@ export const leaveFields: INodeProperties[] = [
 		type: 'string',
 		required: true,
 		default: '',
-		placeholder: '["1234567890"]',
+		placeholder: '["XYZ000","000000"]',
 		displayOptions: {
 			show: {
 				resource: ['leave'],
 				operation: ['getBradfordReport'],
 			},
 		},
-		description: 'JSON Array of employee erecnos (maximum 30)',
+		description: 'JSON Array of employee identifiers (Email ID, Employee ID, or Erec No). Maximum 30 employees.',
 	},
 	{
 		displayName: 'As On Date',
@@ -728,8 +728,8 @@ export const leaveFields: INodeProperties[] = [
 				name: 'employee',
 				type: 'string',
 				default: '',
-				placeholder: '["1234567890"]',
-				description: 'JSON Array of employee erecnos (maximum 30)',
+				placeholder: '["XYZ000","000000"]',
+				description: 'JSON Array of employee identifiers (Email ID, Employee ID, or Erec No). Maximum 30 employees.',
 			},
 			{
 				displayName: 'Unit',
