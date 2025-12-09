@@ -69,7 +69,7 @@ export const timesheetFields: INodeProperties[] = [
 				operation: ['getTimesheets'],
 			},
 		},
-		description: 'User identifier: "all", Email ID, Employee ID (e.g., DCM239), or Erec No (e.g., 29217000003875017)',
+		description: 'User identifier: "all", Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 	},
 	{
 		displayName: 'Additional Options',
@@ -241,7 +241,7 @@ export const timesheetFields: INodeProperties[] = [
 				operation: ['createTimesheet'],
 			},
 		},
-		description: 'User Email ID, Employee ID (e.g., DCM239), or Erec No (e.g., 29217000003875017)',
+		description: 'User Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 	},
 	{
 		displayName: 'Timesheet Name',

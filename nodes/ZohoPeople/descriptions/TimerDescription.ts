@@ -75,7 +75,7 @@ export const timerFields: INodeProperties[] = [
 				operation: ['startTimer'],
 			},
 		},
-		description: 'User Email ID, Employee ID (e.g., DCM239), or Erec No (e.g., 29217000003875017)',
+		description: 'User Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 	},
 	{
 		displayName: 'Job ID',

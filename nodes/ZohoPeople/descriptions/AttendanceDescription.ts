@@ -104,7 +104,7 @@ export const attendanceFields: INodeProperties[] = [
 				operation: ['shiftDetailsOfEmployee'],
 			},
 		},
-		description: 'Employee ID (e.g., DCM239)',
+		description: 'Employee ID (e.g., XYZ000)',
 	},
 	{
 		displayName: 'Email ID',
@@ -185,7 +185,7 @@ export const attendanceFields: INodeProperties[] = [
 				name: 'employeeId',
 				type: 'string',
 				default: '',
-				description: 'Employee Email ID, Employee ID (e.g., DCM239), or Erec No (e.g., 29217000003875017)',
+				description: 'Employee Email ID, Employee ID (e.g., XYZ000), or Erec No (e.g., 000000)',
 			},
 			{
 				displayName: 'From Date',
@@ -262,7 +262,7 @@ export const attendanceFields: INodeProperties[] = [
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Employee ID (e.g., DCM239)',
+		description: 'Employee ID (e.g., XYZ000)',
 		displayOptions: {
 			show: {
 				resource: ['attendance'],
@@ -371,14 +371,14 @@ export const attendanceFields: INodeProperties[] = [
 				name: 'empId',
 				type: 'string',
 				default: '',
-				description: 'Employee ID (e.g., DCM239)',
+				description: 'Employee ID (e.g., XYZ000)',
 			},
 			{
 				displayName: 'Employee Record Number',
 				name: 'erecno',
 				type: 'string',
 				default: '',
-				description: 'Employee Erec No (e.g., 29217000003875017)',
+				description: 'Employee Erec No (e.g., 000000)',
 			},
 			{
 				displayName: 'Map ID',
@@ -455,7 +455,7 @@ export const attendanceFields: INodeProperties[] = [
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Employee ID (e.g., DCM239)',
+		description: 'Employee ID (e.g., XYZ000)',
 		displayOptions: {
 			show: {
 				resource: ['attendance'],
